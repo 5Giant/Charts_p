@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h2 margin: 0;>Численное моделирование течения в трубе методом РПР.</h2>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </table>
+
+  <table>
+    <tr>
+      <th><button onclick="start_ch()">Старт!</button></th>
+      <th><button onclick="stop_ch()">Стоп!</button></th>
+      <th><button onclick="reset_ch()">Обновить</button></th>
+      <th><form class="png1" id="form">
+        <input class="inp" type="text" id="inp1" value="100" />
+        <button  onclick="step_n()">Шаг</button>
+      </form><br /> 
+      <th width="20"></th>
+      <th > <div class="controls">
+        <select name="chartType" id="chartType" onchange="updateChartType()">
+          <option value="1">2 Заглушки</option>
+          <option value="2">2 Ресивера</option>
+        </select>
+      </div></th>
+    </tr>
+
+    </table>
+      <div  style="width: 1200px;">
+        <canvas id="myChart"></canvas>
+      </div>
+      <div  id="layer2" ></div>
+      <form id="form0">
+        <table>
+          <tr>
+            <th>
+              <p>
+                Co <span class="required"></span> <br />
+                <input  type="text" id="in1" value="0.3" width="5" />
+              </p>
+            </th>
+            <th ><button onclick="re()">Ввод</button></th>
+            <th width="400"></th>
+          </tr>
+        </table> 
+      </form>
+      <script src="script.js"></script>
+      <section id="text">Имеется прямая труба диаметром d=30 мм и длинной L=1 метр. На левом и правом  конце трубы установлены заглушки. В начальный момент времени параметры в трубе : р_min=1 Бар, р_max=1.4 Бар,  Т=300 К. Для расчета труба делится на N=100 ячеек.</section>
+      <hr />
+      <p>Щепилов Е.А.<a href="https://github.com/5Giant" target="_blank"><img class="png1" src="1.png" width="30" 
+        height="30" alt="Git"></a></p>
+  </body>
+</html>

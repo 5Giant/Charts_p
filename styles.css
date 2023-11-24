@@ -1,0 +1,96 @@
+* {
+  font-family: '"Times New Roman", Times, serif';
+}
+
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+.png1 {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+img:hover {
+  transform: scale(1.5);
+}
+
+.form2 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.inp {
+  position: relative;
+  bottom: 10px;
+}
+
+.input-box {
+  position: relative;
+}
+#cell1 {
+  width: 300px;
+  font-size: 30px;
+}
+
+input {
+  background: rgba(66, 66, 212, 0.325);
+  padding: 10px;
+  border-radius: 11px;
+  width: 100px;
+}
+
+label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: #e00f0f;
+  padding: 0 5px;
+}
+
+button {
+  width: 200px;
+  padding: 10px 10px;
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#layer2 {
+  z-index: 2;
+  position: absolute;
+  top: 245px;
+  left: 1100px;
+  z-index: 100;
+  color: rgba(4, 0, 255, 0.796);
+  font-size: 18px;
+}
+
+#chartType {
+  width: 220px;
+  padding: 10px 1px;
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+}
